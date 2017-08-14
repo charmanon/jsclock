@@ -71,3 +71,18 @@ body {
 .second-moving {
 	background-color: yellow;
 }
+
+footer {
+	font-size: 20px;
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: blue;
+}
