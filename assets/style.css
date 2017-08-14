@@ -33,6 +33,7 @@ body {
 	transform: translateY(-3px); /*account for height of clock hands*/
 	background: url(https://cssanimation.rocks/images/posts/clocks/ios_clock.svg);
 	background-repeat: no-repeat;
+	background-position-x: 5px;
 }
 
 .hand {
@@ -44,8 +45,19 @@ body {
 	transform-origin: 100%;
 	transform: rotate(90deg);
 	transition: all 0.05s;
-	transition-timing-function: cubic-bezier();
+	transition-timing-function: cubic-bezier(.19, .94, .83, .67);
 	font-size: 1rem;
+}
+
+.circle {
+	position: absolute;
+	top: 48%;
+	right: 46%;
+	z-index: 1;
+	background-color: black;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
 }
 
 .hour-moving {
